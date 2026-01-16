@@ -7,12 +7,6 @@ def pick_value(poss_values):
 
 # function to be used in game_2: Higher or Lower
 def check_higher_lower(current_val, next_val, user_input):
-    current_val = random.randint(0,20)
-    next_val = random.randint(0,20)
-    if current_val == next_val:
-        next_val = random.randint(0,20)
-    user_input = str(input("Enter higher 'h' or lower 'l' "))
-
     if next_val > current_val and user_input == 'h':
         return True
     elif next_val < current_val and user_input == 'l':
